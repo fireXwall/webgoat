@@ -9,7 +9,7 @@ addons:
     token:
       secure: "$SONAR_TOKEN"
 jdk:
-- oraclejdk8
+- oraclejdk9
 install: "/bin/true"
 script:
 - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
